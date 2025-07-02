@@ -1,4 +1,8 @@
 site_name: ZCR
+site_author: 4Tel
+
+repo_name: 4Tel/ZCR
+repo_url: https://github.com/4Tel/ZCR
 
 theme:
   name: material
@@ -7,17 +11,20 @@ theme:
   # favicon: 
   palette:
     - media: "(prefers-color-scheme)"
-      scheme: default
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
+
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
+
     - media: "(prefers-color-scheme: dark)"
       scheme: slate  
+      primary: blue grey
       toggle:
         icon: material/weather-night
         name: Switch to system preference
