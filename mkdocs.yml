@@ -7,6 +7,8 @@ repo_url: https://github.com/4Tel/ZCR
 theme:
   name: material
   language: ko
+  # override path
+  custom_dir: overrides
   # logo: 
   # favicon: 
   palette:
@@ -44,12 +46,31 @@ theme:
     # search settings
     - search.suggest
     - search.highlight
+    # Code Block
+    - content.code.annotate
+    - content.code.copy
+    # etc.
+    - toc.follow
 
-# extra:
+extra:
+  comments:
+    enable: true
+    mode: giscus
+    repo: 4Tel/ZCR
+    repo_id: R_kgDOPFBYZg
+    category: General
+    category_id: DIC_kwDOPFBYZs4CsXyz
+    mapping: pathname
+    strict: 1
+    reactions_enabled: 1
+    emit_metadata: 0
+    input_position: top
+    theme: preferred_color_scheme
+    lang: ko
+    crossorigin: anonymous
 #   analysis:
 #     provider: google
 #     property: 'G-XXXXXXXXXX'
-#   giscus:
   
 # plugins
 plugins:
